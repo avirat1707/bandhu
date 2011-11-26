@@ -7,8 +7,8 @@
 include_once 'core'.DIRECTORY_SEPARATOR.'ChatBox.php';
 try{
     ChatBox::init();
-    $mytry=ChatBox::getClass('core/Model');
-    $mytry->SayHello();
+    $name=ChatBox::getController('ReceiveMessage')->getModel('Try/mytry')->SayHello();
+    //ChatBox::init();
 }catch (Exception $e){
     die($e->getMessage());
 }
