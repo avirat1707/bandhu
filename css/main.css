@@ -1,0 +1,104 @@
+/* 
+    Document   : main
+    Created on : 18 Oct, 2011, 11:11:56 AM
+    Author     : tirth.bodawala
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+*{
+    font-size: 12px;
+}
+input{
+    font-size: 9px;
+}
+
+/*
+*   Chat Box Styles
+*/
+#divChatBox{
+    padding:0px 0 5px 0;
+}
+#divChatBox ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+/*
+*   Loading Box When the page is visited
+*   drived by class "BUSY"
+*/
+#divChatBox ul>li.busy>img{
+    display:block;
+    float:left;
+    margin-left:60px;
+}
+#divChatBox ul>li.busy>span{
+    display:block;
+    float:left;
+    margin-left:20px;
+}
+
+
+#divChatBox ul>li{
+    font-size: 11px;
+    width:230px;
+    height:30px;
+    border: #ffffff thin solid;
+}
+
+#divChatBox ul>li.friend>img{
+    display:block;
+    float:left;
+}
+#divChatBox ul>li.friend>span{
+    display:block;
+    float:left;
+    vertical-align: middle;
+    padding:7px 2px 2px 10px;
+}
+#divChatBox ul>li.friend:hover{
+    cursor:pointer;
+    background-color: #EFFFDB;
+    border: #228703 thin solid;
+}
+#divChatBox ul>li.friend{
+    width:248px;
+}
+/*
+*   Styling the Search Box
+*/
+#divSearchFriend{
+    padding:8px 0 0 10px;
+    border-top:thin solid #DDFFBB;
+}
+#divSearchFriend>label{
+    display:block;
+    float:left;
+    width:60px;
+    padding:3px 0 0 5px;
+}
+#divSearchFriend>input[type="text"]{
+    width:140px;
+}
+
+/**
+    Text area in the chatbox
+**/
+#textareaChatBox{
+    width:270px;
+    resize:none;
+    outline:none;
+    overflow: hidden;
+}
+#divChatHistory{
+    width:270px;
+    height:190px;
+    max-height:200px;
+    overflow: auto; 
+}
